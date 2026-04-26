@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --surface: #faf8f5;
+  --text: #14120f;
+  --muted: #5c5852;
+  --faint: #9a958c;
+  --border: #e8e4dc;
+  --card: #ffffff;
+  --accent: #2d5a4a;
+  --glow: color-mix(in oklab, #c4e0d4 55%, transparent);
+  --code-bg: #f0ebe3;
+  --polaroid-bg: #fffefb;
+  --polaroid-border: #e5e0d8;
+  --photo-placeholder: linear-gradient(
+    145deg,
+    #efe9e0 0%,
+    #e8e2d8 45%,
+    #ddd6cc 100%
+  );
+  --scrap-pad: #f3efe6;
+  --scrap-border: color-mix(in oklab, var(--border) 70%, transparent);
+  --tape-a: #d4e8f2;
+  --tape-b: #f2e6d4;
+  --tape-c: #e8dcf4;
+  --sticker-shadow: color-mix(in oklab, var(--text) 18%, transparent);
+  --cert-paper: #fffdf8;
+  --tool-tile-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #0f0e0c;
+    --text: #f2efe8;
+    --muted: #a8a29a;
+    --faint: #6b6560;
+    --border: #2a2825;
+    --card: #161513;
+    --accent: #7ec4a8;
+    --glow: color-mix(in oklab, #1a3d32 40%, transparent);
+    --code-bg: #1f1d1a;
+    --polaroid-bg: #1a1916;
+    --polaroid-border: #35322d;
+    --photo-placeholder: linear-gradient(
+      145deg,
+      #252320 0%,
+      #1c1b18 50%,
+      #141311 100%
+    );
+    --scrap-pad: #181714;
+    --scrap-border: color-mix(in oklab, var(--border) 85%, transparent);
+    --tape-a: #2a3d45;
+    --tape-b: #454030;
+    --tape-c: #3a3548;
+    --sticker-shadow: rgba(0, 0, 0, 0.45);
+    --cert-paper: #1c1b18;
+    --tool-tile-bg: #22211e;
+  }
+}
+
+@theme inline {
+  --color-background: var(--surface);
+  --color-foreground: var(--text);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.font-scrap {
+  font-family: var(--font-scrap), cursive;
+}
