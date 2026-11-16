@@ -166,7 +166,7 @@ Verdana and Arial are the world's own faces, pinned by the owner. They load from
 A cool blue family does the structure, and a warm peach-and-orange family marks her own voice and the one action.
 
 ### Primary
-- **Profile Navy** (`navy`, #003399): the top bar, every unvisited link, the icon line inside work tiles, and the text selection colour.
+- **Profile Navy** (`navy`, #003399): the top bar, every unvisited link, and the text selection colour.
 - **Box Blue** (`bar`, #3f6fa5): the nav strip, every box header, the 2px box border, the footer rule and the scrollbar thumb. It always carries white bold text.
 
 ### Secondary
@@ -209,7 +209,7 @@ A cool blue family does the structure, and a warm peach-and-orange family marks 
 - **Title** (700, 16px, 1.2): the text on a peach section bar.
 - **Subtitle** (700, 15px, 1.2 to 1.3): box header text in white, and blurb sub-headings in Blurb Orange.
 - **Body** (400, 15px, 1.5): all running copy. Blurb and post paragraphs are capped at 68ch, the lede at 62ch.
-- **Label** (700, 13px): contact links, tile captions, breadcrumbs, pager, footer, table cells and meta lines. Meta lines and table values drop to regular weight at the same size. Nav links are 14px bold, 13px under 760px.
+- **Label** (700, 13px): contact links, tile captions, breadcrumbs, pager, footer, table cells and meta lines. Meta lines and table values drop to regular weight at the same size. Nav links are 13px bold.
 - **Wordmark** (Arial 700, 24px, 1.1): the domain in the navy bar.
 - **Call button** (Arial 700, 19px, 1.2): Book a call.
 
@@ -239,7 +239,7 @@ There are no shadows, no blur and no layering. The page is flat and depth is dra
 
 Every corner is square (0px radius). Boxes, tiles, the photo, buttons, table cells and bars are all plain rectangles. Tiles and the photo are exact squares. Borders come in two weights: 2px for boxes, buttons and the statement, 1px for tiles, the page edge and row dividers. List bullets inside blurbs are squares.
 
-Icons are simple line drawings in the current text colour with round caps and joins: stroke 3 on a 48 unit grid inside tiles (drawn at 56% of the tile), stroke 1.75 on a 20 unit grid at 16px beside contact links.
+Icons are simple line drawings in the current text colour with round caps and joins: stroke 1.75 on a 20 unit grid at 16px beside contact links, and stroke 3 on a 48 unit grid for the person drawing in the "You?" tile (drawn at 56% of the tile). The three brand marks in the Links box (GitHub, LinkedIn, YouTube) are the only filled icons; they are drawn at 28px in black and turn Call Orange on hover.
 
 ## Components
 
@@ -265,7 +265,13 @@ Two-column label and value table with 2px gaps between cells. Label cells are `k
 - **Footer:** centred 13px row above a 2px Box Blue rule.
 
 ### Work tile
-A square Tile Blue block with a 1px `line` border and a navy line icon, with a bold 13px centred caption below. The whole tile and caption is one link; on hover the border and icon turn Call Orange. The "You?" variant is peach with Peach Ink and links to booking. Tiles appear in a four-column grid (two under 760px), at 64px in the work table, and at 170px on a detail page. The photo box is the same square at 170px.
+A square with a 1px `line` border that holds a real screenshot, cropped from its top left corner to fill the square, with a bold 13px centred caption below. Tile Blue shows only while the picture loads. The whole tile and caption is one link; on hover the border turns Call Orange. The "You?" variant is peach with a Peach Ink person drawing and links to booking. Tiles appear in a four-column grid (two under 760px) and at 106px in the work table (72px under 760px). The photo box is the same square at 170px and holds her photo.
+
+### Pics
+A two-column grid of screenshots (one column under 760px) under a peach bar on work pages and About chapters. Each picture sits in a white frame with a 1px `line` border and 4px padding, keeps its own shape up to 420px tall, and opens full size in a new tab; the frame border turns Call Orange on hover. A 13px line beneath says what was blurred or that the data is sample data.
+
+### Links box
+A blue-header box in the side column with a row of three 28px brand marks, then a ruled list of two repositories: a bold 13px link and a one-line description each.
 
 ### Lists
 - **Entries list:** one row per item with a 1px `rule` line beneath, a 13px tabular date, then the link.
