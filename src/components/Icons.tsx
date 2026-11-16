@@ -15,7 +15,7 @@ export function PersonIcon() {
   );
 }
 
-type SmallIconId = "message" | "work" | "blog" | "about";
+type SmallIconId = "message" | "work" | "blog" | "about" | "code";
 
 const smallPaths: Record<SmallIconId, React.ReactNode> = {
   message: (
@@ -32,6 +32,11 @@ const smallPaths: Record<SmallIconId, React.ReactNode> = {
   blog: (
     <>
       <path d="M4 16 5 12 14 3l3 3-9 9z" />
+    </>
+  ),
+  code: (
+    <>
+      <path d="m7 6-4 4 4 4M13 6l4 4-4 4" />
     </>
   ),
   about: (
