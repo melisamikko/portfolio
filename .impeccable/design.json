@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-16T04:47:07Z",
+  "title": "Design System: melisamikko.com",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "primary",
+        "displayName": "Profile Navy",
+        "canonical": "#003399",
+        "tonalRamp": [
+          "#00062b",
+          "#062159",
+          "#193f8c",
+          "#2e60c2",
+          "#5486e5",
+          "#82adfe",
+          "#b9d2fe",
+          "#e6effe"
+        ]
+      },
+      "bar": {
+        "role": "primary",
+        "displayName": "Box Blue",
+        "canonical": "#3f6fa5",
+        "tonalRamp": [
+          "#000b1e",
+          "#0d2744",
+          "#23476e",
+          "#3c689b",
+          "#618cbe",
+          "#8db1dc",
+          "#b7d4f7",
+          "#e5f0fd"
+        ]
+      },
+      "call": {
+        "role": "secondary",
+        "displayName": "Call Orange",
+        "canonical": "#cc4700",
+        "tonalRamp": [
+          "#1d0100",
+          "#471200",
+          "#772701",
+          "#ad3b02",
+          "#d76033",
+          "#f3906c",
+          "#fdc1ac",
+          "#ffe9e2"
+        ]
+      },
+      "call-hover": {
+        "role": "secondary",
+        "displayName": "Call Orange Hover",
+        "canonical": "#a83a00",
+        "tonalRamp": [
+          "#1d0200",
+          "#461300",
+          "#772700",
+          "#a84113",
+          "#cd6843",
+          "#eb9576",
+          "#fec1aa",
+          "#fdeae3"
+        ]
+      },
+      "call-bevel": {
+        "role": "secondary",
+        "displayName": "Call Bevel",
+        "canonical": "#f08a4f",
+        "tonalRamp": [
+          "#1b0400",
+          "#421900",
+          "#703000",
+          "#a24800",
+          "#c66f3b",
+          "#e49a71",
+          "#ffc1a1",
+          "#feeae0"
+        ]
+      },
+      "peach": {
+        "role": "tertiary",
+        "displayName": "Blurb Peach",
+        "canonical": "#ffcc99",
+        "tonalRamp": [
+          "#160700",
+          "#382005",
+          "#5e3d18",
+          "#865c2e",
+          "#aa8055",
+          "#caa683",
+          "#e8cbaf",
+          "#feebd9"
+        ]
+      },
+      "peach-ink": {
+        "role": "tertiary",
+        "displayName": "Peach Ink",
+        "canonical": "#8f3400",
+        "tonalRamp": [
+          "#1c0300",
+          "#461400",
+          "#712d0d",
+          "#a04922",
+          "#c56f4c",
+          "#e3997c",
+          "#fec1a9",
+          "#feeae2"
+        ]
+      },
+      "orange-ink": {
+        "role": "tertiary",
+        "displayName": "Blurb Orange",
+        "canonical": "#b84300",
+        "tonalRamp": [
+          "#1c0200",
+          "#461300",
+          "#772700",
+          "#ab3e00",
+          "#d0663b",
+          "#ed9471",
+          "#fec1a9",
+          "#ffe9e1"
+        ]
+      },
+      "online": {
+        "role": "tertiary",
+        "displayName": "Online Green",
+        "canonical": "#008800",
+        "tonalRamp": [
+          "#001000",
+          "#003100",
+          "#005500",
+          "#077c05",
+          "#42a13d",
+          "#79c373",
+          "#a8e3a3",
+          "#cffeca"
+        ]
+      },
+      "visited": {
+        "role": "tertiary",
+        "displayName": "Visited Purple",
+        "canonical": "#5a2d91",
+        "tonalRamp": [
+          "#110224",
+          "#2f174e",
+          "#50317c",
+          "#754dad",
+          "#9773d0",
+          "#b99deb",
+          "#d9c6fe",
+          "#f1ebff"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground Grey",
+        "canonical": "#e5e5e5",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262626",
+          "#454545",
+          "#666666",
+          "#898989",
+          "#aeaeae",
+          "#d1d1d1",
+          "#eeeeee"
+        ]
+      },
+      "page": {
+        "role": "neutral",
+        "displayName": "Page White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262626",
+          "#454545",
+          "#666666",
+          "#898989",
+          "#aeaeae",
+          "#d1d1d1",
+          "#eeeeee"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#000000",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262626",
+          "#454545",
+          "#666666",
+          "#898989",
+          "#aeaeae",
+          "#d1d1d1",
+          "#eeeeee"
+        ]
+      },
+      "tile": {
+        "role": "neutral",
+        "displayName": "Tile Blue",
+        "canonical": "#c8d8ea",
+        "tonalRamp": [
+          "#070c11",
+          "#20272f",
+          "#3c4652",
+          "#5a6876",
+          "#7e8b99",
+          "#a4afbc",
+          "#c9d2dc",
+          "#e8eff8"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "#6b7f99",
+        "tonalRamp": [
+          "#060c14",
+          "#1d2734",
+          "#384658",
+          "#55687f",
+          "#798ba2",
+          "#a0afc4",
+          "#c6d2e3",
+          "#e5f0fd"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#c9d3e0",
+        "tonalRamp": [
+          "#090b0f",
+          "#22272d",
+          "#3f464e",
+          "#5f6772",
+          "#828a95",
+          "#a8afb8",
+          "#ccd2d9",
+          "#eaeff5"
+        ]
+      },
+      "kv-label": {
+        "role": "neutral",
+        "displayName": "Table Label",
+        "canonical": "#b9cfe8",
+        "tonalRamp": [
+          "#060c13",
+          "#1d2733",
+          "#384657",
+          "#56687d",
+          "#798ba0",
+          "#a0b0c1",
+          "#c6d2e1",
+          "#e5f0fb"
+        ]
+      },
+      "kv-label-ink": {
+        "role": "neutral",
+        "displayName": "Table Label Ink",
+        "canonical": "#1c3f6e",
+        "tonalRamp": [
+          "#020b1c",
+          "#132741",
+          "#2b466b",
+          "#456797",
+          "#698bba",
+          "#93b0d8",
+          "#bbd3f4",
+          "#e6effd"
+        ]
+      },
+      "kv-value": {
+        "role": "neutral",
+        "displayName": "Table Value",
+        "canonical": "#e3ecf6",
+        "tonalRamp": [
+          "#090b0e",
+          "#23272b",
+          "#40464c",
+          "#60676f",
+          "#838a92",
+          "#a8afb6",
+          "#ccd2d7",
+          "#ebeff3"
+        ]
+      },
+      "button-face": {
+        "role": "neutral",
+        "displayName": "Button Grey",
+        "canonical": "#d4d0c8",
+        "tonalRamp": [
+          "#0c0b09",
+          "#282622",
+          "#474540",
+          "#69665f",
+          "#8c8982",
+          "#b0aea8",
+          "#d3d1cc",
+          "#f0eeea"
+        ]
+      },
+      "button-face-hover": {
+        "role": "neutral",
+        "displayName": "Button Grey Hover",
+        "canonical": "#e6e3dc",
+        "tonalRamp": [
+          "#0c0b09",
+          "#282623",
+          "#474540",
+          "#686660",
+          "#8b8983",
+          "#b0aea9",
+          "#d2d1cd",
+          "#f0eeeb"
+        ]
+      },
+      "button-bevel": {
+        "role": "neutral",
+        "displayName": "Button Bevel",
+        "canonical": "#f4f2ee",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#272624",
+          "#464542",
+          "#676663",
+          "#8a8986",
+          "#afaeab",
+          "#d2d1ce",
+          "#efeeec"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The person's name and the page or article title. One per page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "The single black-bordered statement; 19px under 760px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Text on a peach section bar."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Box header text in white and blurb sub-headings in Blurb Orange."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running copy; paragraphs capped at 68ch, lede at 62ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Contact links, captions, breadcrumbs, pager, footer, table cells and meta lines."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The domain in the navy top bar."
+      },
+      "button-call": {
+        "displayName": "Call button",
+        "purpose": "The Book a call button label."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "blink",
+        "value": "blink 1.2s steps(2, jump-none) infinite",
+        "purpose": "Online Now dot, full to 25% opacity in two hard steps; off under prefers-reduced-motion. The only animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "single-column",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Call Button",
+      "kind": "button",
+      "refersTo": "button-call",
+      "description": "The one solid orange action: Book a call. Full width of its box.",
+      "html": "<a class=\"ds-call\" href=\"#\">Book a call</a>",
+      "css": ".ds-call { display: block; background: var(--call, #cc4700); color: #fff; font-family: var(--head, Arial, Helvetica, sans-serif); font-weight: 700; font-size: 19px; line-height: 1.2; text-align: center; text-decoration: none; padding: 12px; border: 2px outset #f08a4f; } .ds-call:hover { background: var(--call-hover, #a83a00); } .ds-call:active { border-style: inset; } .ds-call:focus-visible { outline: 2px dotted var(--ink, #000); outline-offset: 2px; }"
+    },
+    {
+      "name": "Grey Bevelled Button",
+      "kind": "button",
+      "refersTo": "button-bevel",
+      "description": "Secondary navigation such as View all work and Previous / Next.",
+      "html": "<a class=\"ds-btn\" href=\"#\">View all of Melisa's work</a>",
+      "css": ".ds-btn { display: inline-block; background: #d4d0c8; color: var(--ink, #000); border: 2px outset #f4f2ee; padding: 4px 10px; font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); font-weight: 700; font-size: 13px; text-decoration: none; } .ds-btn:hover { background: #e6e3dc; } .ds-btn:active { border-style: inset; } .ds-btn:focus-visible { outline: 2px dotted var(--ink, #000); outline-offset: 2px; }"
+    },
+    {
+      "name": "Top Bar and Nav Strip",
+      "kind": "nav",
+      "refersTo": "nav-strip",
+      "description": "Navy wordmark bar over the blue link strip, on every page.",
+      "html": "<div class=\"ds-topbar\"><a href=\"#\">melisamikko.com</a><span>a place for work</span></div><ul class=\"ds-nav\"><li><a href=\"#\" aria-current=\"page\">Home</a></li><li><a href=\"#\">Work</a></li><li><a href=\"#\">About me</a></li><li><a href=\"#\">Blog</a></li><li><a href=\"#\">Book a call</a></li></ul>",
+      "css": ".ds-topbar { background: var(--navy, #003399); color: #fff; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; padding: 12px 20px; font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); } .ds-topbar a { color: #fff; text-decoration: none; font-family: var(--head, Arial, Helvetica, sans-serif); font-weight: 700; font-size: 24px; line-height: 1.1; } .ds-topbar span { font-size: 13px; font-weight: 700; } .ds-nav { background: var(--bar, #3f6fa5); margin: 0; padding: 4px 12px; list-style: none; display: flex; flex-wrap: wrap; font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); } .ds-nav li + li::before { content: \"|\"; color: #fff; } .ds-nav a { display: inline-block; padding: 8px; color: #fff; font-weight: 700; font-size: 14px; text-decoration: none; } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { text-decoration: underline; } .ds-topbar a:focus-visible, .ds-nav a:focus-visible { outline: 2px dotted #fff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Contact Box",
+      "kind": "card",
+      "refersTo": "box-header",
+      "description": "The bordered box with a blue header bar; here holding the call button and icon links.",
+      "html": "<section class=\"ds-box\"><h2>Contacting Melisa</h2><div class=\"ds-box-body\"><a class=\"ds-box-call\" href=\"#\">Book a call</a><a class=\"ds-box-link\" href=\"#\"><svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 5h16v11H2z\"/><path d=\"m2 6 8 6 8-6\"/></svg>Message me on LinkedIn</a><a class=\"ds-box-link\" href=\"#\"><svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3h6v6H3zM11 3h6v6h-6zM3 11h6v6H3zM11 11h6v6h-6z\"/></svg>See my work</a></div></section>",
+      "css": ".ds-box { border: 2px solid var(--bar, #3f6fa5); background: var(--page, #fff); max-width: 330px; font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); } .ds-box h2 { margin: 0; background: var(--bar, #3f6fa5); color: #fff; font-weight: 700; font-size: 15px; line-height: 1.2; padding: 7px 10px; } .ds-box-body { padding: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 8px; } .ds-box-call { grid-column: 1 / -1; display: block; background: var(--call, #cc4700); color: #fff; font-family: var(--head, Arial, Helvetica, sans-serif); font-weight: 700; font-size: 19px; line-height: 1.2; text-align: center; text-decoration: none; padding: 12px; border: 2px outset #f08a4f; } .ds-box-call:hover { background: var(--call-hover, #a83a00); } .ds-box-call:active { border-style: inset; } .ds-box-link { display: flex; align-items: center; gap: 6px; min-height: 28px; color: var(--navy, #003399); font-weight: 700; font-size: 13px; text-underline-offset: 2px; } .ds-box-link svg { flex: none; } .ds-box-link:hover { color: var(--call, #cc4700); } .ds-box a:focus-visible { outline: 2px dotted var(--ink, #000); outline-offset: 2px; }"
+    },
+    {
+      "name": "Peach Section Bar",
+      "kind": "custom",
+      "refersTo": "peach-bar",
+      "description": "Opens an unboxed section in the main column, with orange sub-headings below.",
+      "html": "<section class=\"ds-blurb\"><h2>Melisa's Blurbs</h2><h3>About me:</h3><p>Running copy sits directly on the white page under the bar, with <a href=\"#\">a blue underlined link</a>.</p></section>",
+      "css": ".ds-blurb { font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); font-size: 15px; line-height: 1.5; color: var(--ink, #000); background: var(--page, #fff); } .ds-blurb h2 { margin: 0; background: var(--peach, #ffcc99); color: var(--peach-ink, #8f3400); font-weight: 700; font-size: 16px; line-height: 1.2; padding: 8px 10px; } .ds-blurb h3 { color: var(--orange-ink, #b84300); font-weight: 700; font-size: 15px; line-height: 1.3; margin: 14px 0 4px; } .ds-blurb p { margin: 0; max-width: 68ch; } .ds-blurb a { color: var(--navy, #003399); text-underline-offset: 2px; } .ds-blurb a:visited { color: var(--visited, #5a2d91); } .ds-blurb a:hover { color: var(--call, #cc4700); } .ds-blurb a:focus-visible { outline: 2px dotted var(--ink, #000); outline-offset: 2px; }"
+    },
+    {
+      "name": "Detail Table",
+      "kind": "custom",
+      "refersTo": "kv-label",
+      "description": "Label and value facts in two tinted columns with 2px gaps.",
+      "html": "<table class=\"ds-kv\"><tbody><tr><th scope=\"row\">Status</th><td>Live</td></tr><tr><th scope=\"row\">Built with</th><td>Next.js, n8n, Slack</td></tr></tbody></table>",
+      "css": ".ds-kv { width: 100%; max-width: 330px; border-collapse: separate; border-spacing: 2px; font-size: 13px; line-height: 1.5; font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); } .ds-kv th { background: #b9cfe8; color: #1c3f6e; text-align: left; vertical-align: top; padding: 6px 8px; width: 36%; } .ds-kv td { background: #e3ecf6; color: var(--ink, #000); padding: 6px 8px; vertical-align: top; }"
+    },
+    {
+      "name": "Work Tile",
+      "kind": "custom",
+      "refersTo": "tile",
+      "description": "Square icon tile with a bold caption; the whole thing is one link. The peach variant is the You? tile.",
+      "html": "<ul class=\"ds-top8\"><li><a href=\"#\"><span class=\"ds-tile\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 26 24 9l19 17\"/><path d=\"M11 22v17h26V22\"/><path d=\"M20 39V29h8v10\"/></svg></span>Roofing website</a></li><li><a href=\"#\"><span class=\"ds-tile ds-tile-you\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"24\" cy=\"16\" r=\"8\"/><path d=\"M8 42c1-10 7-15 16-15s15 5 16 15\"/></svg></span>You? Book a call</a></li></ul>",
+      "css": ".ds-top8 { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, 120px); gap: 16px 12px; font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); } .ds-top8 a { display: block; text-align: center; font-weight: 700; font-size: 13px; line-height: 1.3; color: var(--navy, #003399); text-underline-offset: 2px; } .ds-top8 a:hover { color: var(--call, #cc4700); } .ds-tile { display: grid; place-items: center; aspect-ratio: 1; background: var(--tile, #c8d8ea); border: 1px solid var(--line, #6b7f99); color: var(--navy, #003399); margin-bottom: 6px; } .ds-tile svg { width: 56%; height: 56%; } .ds-top8 a:hover .ds-tile { border-color: var(--call, #cc4700); color: var(--call, #cc4700); } .ds-tile-you { background: var(--peach, #ffcc99); color: var(--peach-ink, #8f3400); } .ds-top8 a:focus-visible { outline: 2px dotted var(--ink, #000); outline-offset: 2px; }"
+    },
+    {
+      "name": "Statement Box",
+      "kind": "custom",
+      "refersTo": "statement",
+      "description": "The single black-bordered, centred statement at the top of the main column.",
+      "html": "<p class=\"ds-statement\">Melisa builds the systems your business runs on, and keeps them running</p>",
+      "css": ".ds-statement { margin: 0; border: 2px solid var(--ink, #000); background: var(--page, #fff); color: var(--ink, #000); padding: 16px; text-align: center; font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); font-weight: 700; font-size: 22px; line-height: 1.25; text-wrap: balance; }"
+    },
+    {
+      "name": "Online Now",
+      "kind": "custom",
+      "description": "Green status line with a dot that blinks in two hard steps; still under reduced motion.",
+      "html": "<p class=\"ds-online\"><svg viewBox=\"0 0 12 12\" width=\"11\" height=\"11\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"6\" r=\"5\" fill=\"currentColor\"/></svg>Online Now!</p>",
+      "css": ".ds-online { margin: 0; color: var(--online, #008800); font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 5px; font-family: var(--face, Verdana, Geneva, Tahoma, sans-serif); } .ds-online svg { animation: ds-blink 1.2s steps(2, jump-none) infinite; } @keyframes ds-blink { to { opacity: 0.25; } } @media (prefers-reduced-motion: reduce) { .ds-online svg { animation: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Profile Page, Played Straight",
+    "overview": "The site is a personal profile page from 2006, built without irony. A white page sits centred on a pale grey ground. A navy bar and a blue link strip run across the top. Below them, a narrow left column carries the person (name, square photo, quote, contact box, detail tables) and a wide right column carries what she says and what she has built. Everything is a bordered box, a coloured header bar, a table, or an underlined link.\n\nThe world is dense and plain on purpose. Text is small, labels are bold, corners are square, and nothing floats. Colour does the sectioning: navy for the site, mid-blue for boxes, peach for section bars, orange for the one thing to click. It refuses the consultant template of a big headline over a grid of soft cards; a visitor should feel they landed on a real person's page, not a brochure.\n\nVerdana and Arial are the world's own faces, pinned by the owner. They load from the visitor's machine, which is exactly how the original pages worked.",
+    "keyCharacteristics": [
+      "Two columns inside one fixed-width white page on a grey ground.",
+      "Sections are announced by solid colour bars, never by whitespace alone.",
+      "Square corners everywhere and no shadows; buttons are raised with outset borders.",
+      "Blue underlined links that turn purple once visited and orange on hover.",
+      "One orange call button per box; every other action is a link or a grey bevelled button.",
+      "No motion except a stepped blink on the Online Now mark."
+    ],
+    "rules": [
+      {
+        "name": "The One Orange Button Rule",
+        "body": "Solid Call Orange fill belongs to Book a call and nothing else. Orange elsewhere is text or a 1px border.",
+        "section": "colors"
+      },
+      {
+        "name": "The Link Is Blue Rule",
+        "body": "A link in content is navy, underlined, purple when visited and orange on hover. Links lose the underline only on a coloured bar (top bar, nav strip) or when they are a button.",
+        "section": "colors"
+      },
+      {
+        "name": "The Bar Carries The Colour Rule",
+        "body": "Blue and peach appear as solid bars with text on them, not as tints behind whole sections. Box bodies and the page stay white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Weights Rule",
+        "body": "Only 400 and 700 exist. Emphasis is bold or a colour bar; there is no italic, no light weight, no letter-spacing and no uppercase styling.",
+        "section": "typography"
+      },
+      {
+        "name": "The Small Type Rule",
+        "body": "Body is 15px and nothing is set below 13px. The largest text on any page is 26px.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bevel Rule",
+        "body": "Raised means an outset border, pressed means an inset border. `box-shadow` is not part of this system.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do open every section with a bar: Box Blue with white text for a bordered box, Blurb Peach with Peach Ink for an unboxed section.",
+      "Do keep every corner square and draw depth with borders (2px for boxes and buttons, 1px for tiles and dividers).",
+      "Do set all text in the Verdana stack at 13px to 26px in weights 400 and 700; keep Arial for the wordmark and the call button.",
+      "Do keep content links navy and underlined, with the purple visited and orange hover states.",
+      "Do put label and value facts in a detail table and lists of things in ruled rows.",
+      "Do keep the two-column page (330px side column, 24px gutter, 1040px maximum) and collapse to one column under 760px.",
+      "Do keep the 2px dotted focus outline on every interactive element, white on the coloured bars."
+    ],
+    "donts": [
+      "Don't round corners, add shadows, gradients or blur. The world is flat rectangles with borders.",
+      "Don't fill anything other than Book a call with solid Call Orange.",
+      "Don't load web fonts or add a third face. System Verdana and Arial are the owner's pinned choice.",
+      "Don't add motion: no transitions, fades, slides or scroll effects. The stepped Online Now blink is the only animation and it must stop under reduced motion.",
+      "Don't tint whole sections with blue or peach; colour lives on bars, tiles and table cells while bodies stay white.",
+      "Don't put black or white text on peach, or anything but white text on navy, Box Blue and Call Orange.",
+      "Don't set type larger than 26px or smaller than 13px, or use italic, uppercase styling or letter-spacing."
+    ]
+  }
+}
