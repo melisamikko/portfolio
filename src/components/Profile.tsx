@@ -24,7 +24,7 @@ export function Shell({
       <header>
         <div className="topbar">
           <Link href="/">{site.domain}</Link>
-          <span>systems for your business, built and kept running</span>
+          <span>a place for work</span>
         </div>
         <nav aria-label="Main">
           <ul className="nav">
@@ -81,7 +81,7 @@ export function ContactBox() {
         </a>
         <a href={site.linkedinHref}>
           <SmallIcon id="message" />
-          Send Message
+          Message me on LinkedIn
         </a>
         <Link href="/work">
           <SmallIcon id="work" />
@@ -91,10 +91,10 @@ export function ContactBox() {
           <SmallIcon id="blog" />
           Read my blog
         </Link>
-        <a href={site.githubHref}>
-          <SmallIcon id="code" />
-          View my code
-        </a>
+        <Link href="/#about">
+          <SmallIcon id="about" />
+          About me
+        </Link>
       </div>
     </Box>
   );

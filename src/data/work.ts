@@ -56,7 +56,7 @@ export const work: readonly Work[] = [
       "Ongoing speed work, so pages load quickly on a phone.",
     ],
     changed: [
-      "The site is live and I look after it every week. I have shipped more than 800 changes to it since July 2026, each one tracked as its own task with a before and an after.",
+      "The site is live and I look after it every week. I have shipped more than 750 changes to it since July 2026, each one tracked as its own task with a before and an after.",
       "The team asks for a change and it is handled. Nobody on their side touches code.",
     ],
   },

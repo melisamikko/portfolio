@@ -41,11 +41,8 @@ export default async function WorkPage({ params }: Props) {
 
   return (
     <Shell current="/work">
-      <div className="cols">
+      <div className="cols detail">
         <div className="stack">
-          <p className="crumbs">
-            <Link href="/work">Back to all work</Link>
-          </p>
           <span className="tile bigtile">
             <WorkIcon id={item.icon} />
           </span>
@@ -56,6 +53,9 @@ export default async function WorkPage({ params }: Props) {
         </div>
         <article className="stack">
           <header>
+            <p className="crumbs">
+              <Link href="/work">Back to all work</Link>
+            </p>
             <h1 className="title">{item.title}</h1>
             <p className="lede">{item.summary}</p>
           </header>
@@ -81,14 +81,14 @@ export default async function WorkPage({ params }: Props) {
           <nav className="pager" aria-label="More work">
             <span>
               {previous ? (
-                <Link href={`/work/${previous.slug}`}>
+                <Link className="btn" href={`/work/${previous.slug}`}>
                   Previous: {previous.short}
                 </Link>
               ) : null}
             </span>
             <span>
               {next ? (
-                <Link href={`/work/${next.slug}`}>Next: {next.short}</Link>
+                <Link className="btn" href={`/work/${next.slug}`}>Next: {next.short}</Link>
               ) : null}
             </span>
           </nav>

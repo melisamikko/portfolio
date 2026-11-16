@@ -77,7 +77,7 @@ export default function Home() {
           </section>
 
           <section>
-            <h2 className="peach">{site.firstName}&apos;s Work Space</h2>
+            <h2 className="peach">{site.firstName}&apos;s Work Space: Top 8</h2>
             <p className="count">
               {site.firstName} has <b>{work.length}</b> pieces of work.
             </p>
@@ -102,7 +102,7 @@ export default function Home() {
               </li>
             </ul>
             <p className="more">
-              <Link href="/work">View all of {site.firstName}&apos;s work</Link>
+              <Link className="btn" href="/work">View all of {site.firstName}&apos;s work</Link>
             </p>
           </section>
 

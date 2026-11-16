@@ -70,14 +70,9 @@ export function WorkIcon({ id }: { id: WorkIconId | "you" }) {
   );
 }
 
-type SmallIconId = "calendar" | "message" | "work" | "blog" | "code";
+type SmallIconId = "message" | "work" | "blog" | "about";
 
 const smallPaths: Record<SmallIconId, React.ReactNode> = {
-  calendar: (
-    <>
-      <path d="M3 5h14v12H3zM3 9h14M7 3v4M13 3v4" />
-    </>
-  ),
   message: (
     <>
       <path d="M2 5h16v11H2z" />
@@ -94,9 +89,10 @@ const smallPaths: Record<SmallIconId, React.ReactNode> = {
       <path d="M4 16 5 12 14 3l3 3-9 9z" />
     </>
   ),
-  code: (
+  about: (
     <>
-      <path d="m7 6-4 4 4 4M13 6l4 4-4 4" />
+      <circle cx="10" cy="7" r="3.5" />
+      <path d="M3 18c.5-4 3-6 7-6s6.5 2 7 6" />
     </>
   ),
 };

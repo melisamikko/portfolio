@@ -31,15 +31,15 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <Shell current="/blog">
-      <div className="cols">
+      <div className="cols detail">
         <div className="stack">
-          <p className="crumbs">
-            <Link href="/blog">Back to all entries</Link>
-          </p>
           <ContactBox />
         </div>
         <article className="stack post">
           <header>
+            <p className="crumbs">
+              <Link href="/blog">Back to all entries</Link>
+            </p>
             <h1 className="title">{post.title}</h1>
             <p className="meta">
               <time dateTime={post.date}>{formatPostDate(post.date)}</time>

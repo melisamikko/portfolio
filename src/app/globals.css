@@ -78,6 +78,32 @@ a:hover {
   outline-offset: 2px;
 }
 
+.topbar a:focus-visible,
+.nav a:focus-visible {
+  outline-color: #fff;
+}
+
+a.btn,
+a.btn:visited {
+  display: inline-block;
+  background: #d4d0c8;
+  color: var(--ink);
+  border: 2px outset #f4f2ee;
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+a.btn:hover {
+  background: #e6e3dc;
+  color: var(--ink);
+}
+
+a.btn:active {
+  border-style: inset;
+}
+
 .skip {
   position: absolute;
   left: -999px;
@@ -438,6 +464,10 @@ a.call:active {
 
 .worklist small {
   display: block;
+  font-size: 15px;
+}
+
+.worklist small + small {
   font-size: 13px;
 }
 
@@ -458,6 +488,7 @@ a.call:active {
 .crumbs {
   font-size: 13px;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .pager {
@@ -510,6 +541,25 @@ a.call:active {
 
   .nav {
     padding-inline: 8px;
+  }
+
+  .detail > .stack:first-child {
+    order: 1;
+  }
+
+  .bigtile {
+    display: none;
+  }
+
+  .foot a,
+  .crumbs a,
+  .worklist a {
+    display: inline-block;
+    padding-block: 10px;
+  }
+
+  a.btn {
+    padding: 10px 12px;
   }
 
   .top8 {

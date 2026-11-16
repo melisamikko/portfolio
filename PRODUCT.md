@@ -45,8 +45,8 @@ One person who both designs and ships the system and then keeps it running: prod
 
 Case-study material, all from her own project folders on MelSSD and verified there:
 
-1. A roofing company's production website that generates nearly all of its leads (Next.js, 790+ commits since July 2026; speed work, city pages, a Meta-ads landing page with lead tracking into the CRM).
-2. An insurance agency's contracting and onboarding hub that replaced a master Google Sheet and takes producers from lead to signed contract; used daily by staff and agents. Claim only her part: the triage bot was built by a colleague.
+1. A roofing company's production website that generates nearly all of its leads (Next.js; 788 of her own commits on main as of 2026-11-15; speed work, city pages, a Meta-ads landing page with lead tracking into the CRM).
+2. Not a case study. The insurance contracting and onboarding hub was checked on 2026-11-15: its commit history is almost entirely a colleague's (about 200 commits against 3 of hers), so it is left off the site unless she says which part was hers.
 3. A roofing company's commercial sales data moved from a field-service system into a CRM pipeline with a live, access-protected sales dashboard.
 4. A Slack-to-live website desk: a client posts a request in Slack, agents build and review the change, she approves by risk level, and a named desk bot tells the client it is live. Parts have not yet run on a real client request.
 5. A senior care company's website forms moved from three Zapier automations to one self-hosted workflow, plus a daily KPI report in Slack and failure alerts.
