@@ -7,19 +7,7 @@ export type BlogPost = {
   paragraphs: string[];
 };
 
-export const blogPosts: BlogPost[] = [
-  {
-    slug: "welcome-to-the-notebook",
-    title: "Welcome to the notebook",
-    date: "2026-04-26",
-    excerpt:
-      "Replace this stub with your first essay, notes, or link roundup — everything lives in src/data/blog.ts for now.",
-    paragraphs: [
-      "This site reads posts from a small data file so you can ship writing without wiring a CMS on day one. Duplicate an entry, give it a new slug, title, and paragraphs, and it will show up on the home teaser and on the blog index.",
-      "When you outgrow a single file, you can move these bodies to MDX or a headless CMS and keep the same routes.",
-    ],
-  },
-];
+export const blogPosts: BlogPost[] = [];
 
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort((a, b) => (a.date < b.date ? 1 : -1));
