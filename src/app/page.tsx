@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GitHubMark, OnlineIcon, PersonIcon } from "@/components/Icons";
+import { Mark, OnlineIcon, PersonIcon } from "@/components/Icons";
 import { Box, ContactBox, KeyValues, Shell, Thumb } from "@/components/Profile";
 import { formatPostDate, getAllPosts } from "@/data/blog";
-import { blurbs, details, interests, site } from "@/data/site";
+import { blurbs, details, interests, repos, site } from "@/data/site";
 import { work } from "@/data/work";
 
 const updated = new Date().toLocaleDateString("en-US", {
@@ -53,14 +53,26 @@ export default function Home() {
           <ContactBox />
         </div>
         <div className="stack side-bottom">
-          <Box title={`${site.firstName}'s GitHub`}>
-            <a
-              className="ghmark"
-              href={site.githubHref}
-              aria-label={`${site.name} on GitHub`}
-            >
-              <GitHubMark />
-            </a>
+          <Box title={`${site.firstName}'s Links`}>
+            <div className="marks">
+              <a href={site.githubHref} aria-label={`${site.name} on GitHub`}>
+                <Mark id="github" />
+              </a>
+              <a href={site.linkedinHref} aria-label={`${site.name} on LinkedIn`}>
+                <Mark id="linkedin" />
+              </a>
+              <a href={site.youtubeHref} aria-label={`${site.name} on YouTube`}>
+                <Mark id="youtube" />
+              </a>
+            </div>
+            <ul className="repos">
+              {repos.map((repo) => (
+                <li key={repo.name}>
+                  <a href={repo.href}>{repo.name}</a>
+                  <span>{repo.about}</span>
+                </li>
+              ))}
+            </ul>
           </Box>
           <Box title={`${site.firstName}'s Details`}>
             <KeyValues rows={details} />

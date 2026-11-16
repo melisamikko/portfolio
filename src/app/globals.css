@@ -456,15 +456,39 @@ a.call:active {
   object-position: top;
 }
 
-a.ghmark,
-a.ghmark:visited {
-  display: inline-flex;
-  color: var(--ink);
-  padding: 2px;
+.marks {
+  display: flex;
+  gap: 14px;
 }
 
-a.ghmark:hover {
+.marks a,
+.marks a:visited {
+  display: inline-flex;
+  color: var(--ink);
+  padding: 4px;
+}
+
+.marks a:hover {
   color: var(--call);
+}
+
+.repos {
+  margin-top: 10px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+}
+
+.repos li {
+  padding: 8px 0 0;
+}
+
+.repos a {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.repos span {
+  display: block;
 }
 
 .picnote {

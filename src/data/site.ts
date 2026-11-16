@@ -10,11 +10,25 @@ export const site = {
   bookingHref: "https://calendar.app.google/qLPwaHd8SSKcNNS6A",
   linkedinHref: "https://www.linkedin.com/in/melisamikko/",
   githubHref: "https://github.com/melisamikko",
+  youtubeHref: "https://www.youtube.com/@melisamikko",
   /** A square photo in public/. */
   photo: "/melisa.jpg" as string | undefined,
 };
 
 type Row = readonly [label: string, value: string];
+
+export const repos: readonly { name: string; href: string; about: string }[] = [
+  {
+    name: "life-insurance-agency-template",
+    href: "https://github.com/melisamikko/life-insurance-agency-template",
+    about: "A ready-to-rebrand agency website with a quote funnel.",
+  },
+  {
+    name: "portfolio",
+    href: "https://github.com/melisamikko/portfolio",
+    about: "The code for the page you are looking at.",
+  },
+];
 
 export const details: readonly Row[] = [
   ["Here for", "Business owners who need a system built and then looked after"],
