@@ -51,7 +51,6 @@ export function Shell({
         </span>
         <a href={site.bookingHref}>Book a call</a>
         <a href={site.linkedinHref}>LinkedIn</a>
-        <a href={site.githubHref}>GitHub</a>
       </footer>
     </div>
   );

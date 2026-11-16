@@ -9,7 +9,6 @@ export const site = {
   /** Interim: the Fieldhouse Ops booking page. Replace with Melisa's own link before launch. */
   bookingHref: "https://calendar.app.google/qLPwaHd8SSKcNNS6A",
   linkedinHref: "https://www.linkedin.com/in/melisamikko/",
-  githubHref: "https://github.com/melisamikko",
   /** Drop a square photo in public/ and set its path, e.g. "/melisa.jpg". */
   photo: undefined as string | undefined,
 };
