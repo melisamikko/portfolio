@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { WorkIcon } from "@/components/Icons";
+import Image from "next/image";
 import { Box, ContactBox, KeyValues, Shell } from "@/components/Profile";
 import { getWork, statusLabel, work } from "@/data/work";
 
@@ -43,9 +43,6 @@ export default async function WorkPage({ params }: Props) {
     <Shell current="/work">
       <div className="cols detail">
         <div className="stack">
-          <span className="tile bigtile">
-            <WorkIcon id={item.icon} />
-          </span>
           <Box title="Details">
             <KeyValues rows={rows} />
           </Box>
@@ -59,6 +56,28 @@ export default async function WorkPage({ params }: Props) {
             <h1 className="title">{item.title}</h1>
             <p className="lede">{item.summary}</p>
           </header>
+          <section>
+            <h2 className="peach">Pics</h2>
+            <ul className="pics">
+              {item.pics.map((pic) => (
+                <li key={pic.src}>
+                  <a href={pic.src} target="_blank" rel="noopener">
+                    <Image
+                      src={pic.src}
+                      alt={pic.alt}
+                      width={pic.width}
+                      height={pic.height}
+                      sizes="(max-width: 760px) 92vw, 320px"
+                    />
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="picnote">
+              Real screenshots. Names, logos and figures are blurred. Click a
+              picture to see it full size.
+            </p>
+          </section>
           {sections.map(([heading, lines]) => (
             <section className="blurb" key={heading}>
               <h2 className="peach">{heading}</h2>

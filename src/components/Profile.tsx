@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/data/site";
+import type { Pic } from "@/data/work";
 import { SmallIcon } from "./Icons";
 
 const nav = [
@@ -53,6 +55,14 @@ export function Shell({
         <a href={site.linkedinHref}>LinkedIn</a>
       </footer>
     </div>
+  );
+}
+
+export function Thumb({ pic, sizes }: { pic: Pic; sizes: string }) {
+  return (
+    <span className="tile">
+      <Image src={pic.src} alt="" width={pic.width} height={pic.height} sizes={sizes} />
+    </span>
   );
 }
 

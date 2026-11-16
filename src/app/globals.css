@@ -166,7 +166,7 @@ a.btn:active {
   padding: 8px;
   color: #fff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: none;
 }
 
@@ -401,6 +401,7 @@ a.call:active {
 .tile {
   display: grid;
   place-items: center;
+  position: relative;
   aspect-ratio: 1;
   background: var(--tile);
   border: 1px solid var(--line);
@@ -411,6 +412,53 @@ a.call:active {
 .tile svg {
   width: 56%;
   height: 56%;
+}
+
+.tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  display: block;
+}
+
+.thumbcell {
+  width: 118px;
+}
+
+.pics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+  align-items: start;
+}
+
+.pics a {
+  display: block;
+  border: 1px solid var(--line);
+  padding: 4px;
+  background: var(--page);
+}
+
+.pics a:hover {
+  border-color: var(--call);
+}
+
+.pics img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.picnote {
+  margin-top: 8px;
+  font-size: 13px;
 }
 
 .top8 a:hover .tile {
@@ -454,7 +502,7 @@ a.call:active {
 }
 
 .worklist .tile {
-  width: 64px;
+  width: 106px;
   margin: 0;
 }
 
@@ -479,10 +527,6 @@ a.call:active {
 .lede {
   margin-top: 8px;
   max-width: 62ch;
-}
-
-.bigtile {
-  width: 170px;
 }
 
 .crumbs {
@@ -547,8 +591,16 @@ a.call:active {
     order: 1;
   }
 
-  .bigtile {
-    display: none;
+  .pics {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .thumbcell {
+    width: 84px;
+  }
+
+  .worklist .tile {
+    width: 72px;
   }
 
   .foot a,

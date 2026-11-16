@@ -6,14 +6,14 @@ export const statusLabel: Record<WorkStatus, string> = {
   built: "Built",
 };
 
-export type WorkIconId =
-  | "roof"
-  | "pipeline"
-  | "desk"
-  | "loop"
-  | "chart"
-  | "template"
-  | "pages";
+export type Pic = { src: string; alt: string; width: number; height: number };
+
+const shot = (src: string, alt: string, width = 1280, height = 800): Pic => ({
+  src: `/work/${src}`,
+  alt,
+  width,
+  height,
+});
 
 export type Work = {
   slug: string;
@@ -26,7 +26,8 @@ export type Work = {
   since?: string;
   replaced?: string;
   tools: readonly string[];
-  icon: WorkIconId;
+  /** Real screenshots. Names, logos, phone numbers and figures are blurred before capture. */
+  pics: readonly Pic[];
   summary: string;
   problem: readonly string[];
   built: readonly string[];
@@ -43,7 +44,11 @@ export const work: readonly Work[] = [
     status: "live",
     since: "July 2026",
     tools: ["Next.js", "Vercel", "HubSpot", "PostHog"],
-    icon: "roof",
+    pics: [
+      shot("roofing-website-1.jpg", "Home page of the roofing website, company name blurred"),
+      shot("roofing-website-2.jpg", "Free inspection page with its booking form"),
+      shot("roofing-website-3.jpg", "The roofing website on a phone", 780, 1560),
+    ],
     summary:
       "The production website of a roofing company. Nearly all of the company's leads come through it.",
     problem: [
@@ -69,7 +74,10 @@ export const work: readonly Work[] = [
     since: "July 2026",
     replaced: "Records kept in separate roofing software",
     tools: ["HubSpot", "Next.js", "Vercel"],
-    icon: "pipeline",
+    pics: [
+      shot("sales-pipeline-1.jpg", "Commercial sales dashboard, figures blurred"),
+      shot("sales-pipeline-2.jpg", "Dashboard charts of deals created and won, names and figures blurred"),
+    ],
     summary:
       "Moved a commercial division's contacts, companies and deals into the company CRM, and put a live sales dashboard on top.",
     problem: [
@@ -95,7 +103,7 @@ export const work: readonly Work[] = [
     since: "November 2026",
     replaced: "Website requests handled by hand, one message at a time",
     tools: ["Slack", "Claude", "n8n", "GitHub", "Vercel"],
-    icon: "desk",
+    pics: [shot("website-desk-1.png", "Avatar of the desk assistant that tells clients a change is live", 512, 512)],
     summary:
       "A client posts a website request in Slack. AI agents build and review the change, I approve it, and the client is told when it is live.",
     problem: [
@@ -121,7 +129,10 @@ export const work: readonly Work[] = [
     since: "November 2026",
     replaced: "Three separate Zapier automations",
     tools: ["n8n", "Resend", "Slack", "Vercel"],
-    icon: "loop",
+    pics: [
+      shot("automations-1.jpg", "Status page listing each automation and whether it is healthy", 1280, 900),
+      shot("automations-2.jpg", "Senior care website with the quote form the workflow handles"),
+    ],
     summary:
       "Moved a company's website forms off three paid automations onto one workflow, and added daily reporting and failure alerts.",
     problem: [
@@ -147,7 +158,7 @@ export const work: readonly Work[] = [
     since: "April 2026",
     replaced: "A master Excel sheet fed by daily downloads from two systems",
     tools: ["React", "Supabase", "Google sign-in"],
-    icon: "chart",
+    pics: [shot("production-tracker-1.jpg", "Sign-in screen of the production tracker, company logo blurred", 1000, 625)],
     summary:
       "An app for tracking daily sales agent performance, replacing a manual routine of downloading reports and pasting them into Excel.",
     problem: [
@@ -169,7 +180,10 @@ export const work: readonly Work[] = [
     status: "built",
     since: "September 2026",
     tools: ["Next.js", "Vercel"],
-    icon: "template",
+    pics: [
+      shot("site-template-1.jpg", "Home page of the template site with a sample brand"),
+      shot("site-template-2.jpg", "Step one of the template's quote funnel"),
+    ],
     summary:
       "A reusable website for a life insurance agency with a quote funnel and lead capture built in. One agency site has been built from it.",
     problem: [
@@ -197,7 +211,10 @@ export const work: readonly Work[] = [
     status: "built",
     replaced: "A legacy WordPress site",
     tools: ["Next.js", "Vercel", "Supabase"],
-    icon: "pages",
+    pics: [
+      shot("website-rebuild-1.jpg", "Home page of the rebuilt agency website, name blurred"),
+      shot("website-rebuild-2.jpg", "About page of the rebuilt agency website"),
+    ],
     summary:
       "Rebuilt an agency's entire website from scratch, more than 100 pages, and trained a teammate to maintain it.",
     problem: [

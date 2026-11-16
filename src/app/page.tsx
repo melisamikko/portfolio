@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { OnlineIcon, WorkIcon } from "@/components/Icons";
-import { Box, ContactBox, KeyValues, Shell } from "@/components/Profile";
+import { OnlineIcon, PersonIcon } from "@/components/Icons";
+import { Box, ContactBox, KeyValues, Shell, Thumb } from "@/components/Profile";
 import { formatPostDate, getAllPosts } from "@/data/blog";
 import { blurbs, details, interests, site } from "@/data/site";
 import { work } from "@/data/work";
@@ -33,7 +33,7 @@ export default function Home() {
                 />
               ) : (
                 <span className="photo tile" role="img" aria-label="Photo to come">
-                  <WorkIcon id="you" />
+                  <PersonIcon />
                 </span>
               )}
               <div>
@@ -85,9 +85,7 @@ export default function Home() {
               {work.map((w) => (
                 <li key={w.slug}>
                   <Link href={`/work/${w.slug}`}>
-                    <span className="tile">
-                      <WorkIcon id={w.icon} />
-                    </span>
+                    <Thumb pic={w.pics[0]} sizes="(max-width: 760px) 45vw, 150px" />
                     {w.short}
                   </Link>
                 </li>
@@ -95,7 +93,7 @@ export default function Home() {
               <li>
                 <a href={site.bookingHref}>
                   <span className="tile you">
-                    <WorkIcon id="you" />
+                    <PersonIcon />
                   </span>
                   You? Book a call
                 </a>
