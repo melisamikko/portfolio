@@ -357,6 +357,10 @@ a.call:active {
   max-width: 68ch;
 }
 
+.prose {
+  margin-top: 12px;
+}
+
 .blurb p + p {
   margin-top: 8px;
 }

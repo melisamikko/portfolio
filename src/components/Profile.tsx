@@ -7,7 +7,7 @@ import { SmallIcon } from "./Icons";
 const nav = [
   { href: "/", label: "Home" },
   { href: "/work", label: "Work" },
-  { href: "/#about", label: "About me" },
+  { href: "/about", label: "About me" },
   { href: "/blog", label: "Blog" },
 ] as const;
 
@@ -100,7 +100,7 @@ export function ContactBox() {
           <SmallIcon id="blog" />
           Read my blog
         </Link>
-        <Link href="/#about">
+        <Link href="/about">
           <SmallIcon id="about" />
           About me
         </Link>

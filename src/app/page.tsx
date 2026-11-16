@@ -95,6 +95,11 @@ export default function Home() {
             {blurbs.whoIdLikeToMeet.map((p) => (
               <p key={p}>{p}</p>
             ))}
+            <p className="more">
+              <Link className="btn" href="/about">
+                Read more about {site.firstName}
+              </Link>
+            </p>
           </section>
 
           <section>
