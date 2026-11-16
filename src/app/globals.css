@@ -456,6 +456,17 @@ a.call:active {
   object-position: top;
 }
 
+a.ghmark,
+a.ghmark:visited {
+  display: inline-flex;
+  color: var(--ink);
+  padding: 2px;
+}
+
+a.ghmark:hover {
+  color: var(--call);
+}
+
 .picnote {
   margin-top: 8px;
   font-size: 13px;

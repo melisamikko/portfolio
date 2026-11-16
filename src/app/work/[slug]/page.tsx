@@ -74,8 +74,8 @@ export default async function WorkPage({ params }: Props) {
               ))}
             </ul>
             <p className="picnote">
-              Real screenshots. Names, logos and figures are blurred. Click a
-              picture to see it full size.
+              {item.picNote ??
+                "Real screenshots. Names, logos and figures are blurred. Click a picture to see it full size."}
             </p>
           </section>
           {sections.map(([heading, lines]) => (

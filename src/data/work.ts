@@ -28,6 +28,8 @@ export type Work = {
   tools: readonly string[];
   /** Real screenshots. Names, logos, phone numbers and figures are blurred before capture. */
   pics: readonly Pic[];
+  /** Replaces the default line under the pictures. */
+  picNote?: string;
   summary: string;
   problem: readonly string[];
   built: readonly string[];
@@ -158,7 +160,15 @@ export const work: readonly Work[] = [
     since: "April 2026",
     replaced: "A master Excel sheet fed by daily downloads from two systems",
     tools: ["React", "Supabase", "Google sign-in"],
-    pics: [shot("production-tracker-1.jpg", "Sign-in screen of the production tracker, company logo blurred", 1000, 625)],
+    pics: [
+      shot("production-tracker-2.jpg", "Tracker dashboard: a grid of agents by day, coloured by result, with totals above"),
+      shot("production-tracker-3.jpg", "Daily upload screen where the two reports are dropped in"),
+      shot("production-tracker-4.jpg", "Attendance screen for marking each agent's day"),
+      shot("production-tracker-5.jpg", "Agent roster screen"),
+      shot("production-tracker-1.jpg", "Sign-in screen of the production tracker", 1000, 625),
+    ],
+    picNote:
+      "The real app, shown with made-up sample agents and numbers. The company logo is blurred. Click a picture to see it full size.",
     summary:
       "An app for tracking daily sales agent performance, replacing a manual routine of downloading reports and pasting them into Excel.",
     problem: [

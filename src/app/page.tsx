@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { OnlineIcon, PersonIcon, SmallIcon } from "@/components/Icons";
+import { GitHubMark, OnlineIcon, PersonIcon } from "@/components/Icons";
 import { Box, ContactBox, KeyValues, Shell, Thumb } from "@/components/Profile";
 import { formatPostDate, getAllPosts } from "@/data/blog";
 import { blurbs, details, interests, site } from "@/data/site";
@@ -54,15 +54,13 @@ export default function Home() {
         </div>
         <div className="stack side-bottom">
           <Box title={`${site.firstName}'s GitHub`}>
-            <div className="contact">
-              <a href={site.githubHref} style={{ gridColumn: "1 / -1" }}>
-                <SmallIcon id="code" />
-                github.com/melisamikko
-              </a>
-            </div>
-            <p className="picnote">
-              My public code, including the site template from my Top 8.
-            </p>
+            <a
+              className="ghmark"
+              href={site.githubHref}
+              aria-label={`${site.name} on GitHub`}
+            >
+              <GitHubMark />
+            </a>
           </Box>
           <Box title={`${site.firstName}'s Details`}>
             <KeyValues rows={details} />
